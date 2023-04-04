@@ -1,0 +1,11 @@
+SELECT * FROM departments;
+SELECT department_name FROM departments;
+SELECT DISTINCT department_id FROM employees ORDER BY department_id desc;
+SELECT first_name, last_name FROM employees where manager_id=102;
+SELECT * FROM employees WHERE 12*salary>60000;
+SELECT * FROM employees WHERE 12*salary BETWEEN 80000 AND 110000;
+SELECT * FROM employees WHERE salary BETWEEN 7000 AND 10000;
+SELECT * FROM employees WHERE first_name like '%a';
+SELECT * FROM employees WHERE first_name like '%a%' AND 12*salary>80000;
+SELECT first_name, last_name FROM employees where manager_id=101 OR manager_id=123;
+SELECT last_name, TO_CHAR(salary,99999.9999) FROM employees;
